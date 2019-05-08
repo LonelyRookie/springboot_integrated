@@ -1,11 +1,13 @@
 package com.hcc.springboot_integrated.pojo;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 import javax.persistence.*;
+import javax.validation.Valid;
+import javax.validation.constraints.DecimalMax;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 /**
@@ -31,22 +33,26 @@ public class User implements Serializable {
     @Column(name = "name")
     @Getter
     @Setter
+    @NotEmpty
     private String name;
 
     @Column(name = "age")
     @Getter
     @Setter
+    @DecimalMax("200")
     private Integer age;
 
     @Column(name = "gender")
     @Getter
     @Setter
+    @NotEmpty
     private String gender;
 
     @ManyToOne(cascade = CascadeType.PERSIST)//级联保存
     @JoinColumn(name = "role_id")
     @Getter
     @Setter
+    @Valid
     private Role role;
 
     public User() {

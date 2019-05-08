@@ -6,6 +6,8 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
@@ -34,6 +36,7 @@ public class Role implements Serializable {
     @Column(name = "roleName")
     @Getter
     @Setter
+    @NotNull
     private String roleName;
 
     @OneToMany(mappedBy = "role", fetch = FetchType.EAGER)//fetch = FetchType.EAGER 是解决no Session问题

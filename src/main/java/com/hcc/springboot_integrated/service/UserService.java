@@ -2,6 +2,8 @@ package com.hcc.springboot_integrated.service;
 
 import com.hcc.springboot_integrated.pojo.User;
 
+import java.util.List;
+
 /**
  * @ClassName UserService
  * @Description TODO
@@ -14,4 +16,6 @@ public interface UserService {
     void excute();
 
     void addUser(User user);
+
+    List<User> findAll();
 }

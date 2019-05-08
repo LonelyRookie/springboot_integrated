@@ -72,6 +72,13 @@
             <version>1.1.16</version>
         </dependency>
         <!--   热部署工具 -->
+        <!--  在IDEA中使用devtools热部署配置不生效
+         1.手动：修改完代码后，按快捷键Ctrl+F9，手动构建项目，或者只修改单个类文件的话，按Ctrl+Shift+F9，重新编译该类文件，即可触发重启服务
+         2.自动：
+                1）File -> Settings -> Compiler，勾选 Build Project automatically
+                2）按快捷键Ctrl+Shift+Alt+/，选择1.Registry...
+                3）勾选 compiler.automake.allow.when.app.running 即可
+         -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -122,6 +129,20 @@
             <version>2.0.1</version>
         </dependency>
 
+        <!--   集成Ehcache     -->
+        <!--缓存支持启动器-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+        <!--    Ehcache     -->
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+            <!--            <version>2.10.6</version>-->
+        </dependency>
+
+
     </dependencies>
 
     <build>
@@ -129,7 +150,18 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork><!-- 如果没有该配置，热部署的devtools不生效 -->
+                </configuration>
             </plugin>
+            <!-- 自定义配置spring Boot使用的JDK版本 -->
+            <!--            <plugin>-->
+            <!--                <artifactId>maven-compiler-plugin</artifactId>-->
+            <!--                <configuration>-->
+            <!--                    <source>1.8</source>-->
+            <!--                    <target>1.8</target>-->
+            <!--                </configuration>-->
+            <!--            </plugin>-->
         </plugins>
         <!--   *Mapper.xml 放在java中 ,
          idea默认是不编译 src\main\java下的xml文件,
@@ -145,6 +177,8 @@
                 </includes>
             </resource>
         </resources>
+
+
     </build>
 
 </project>

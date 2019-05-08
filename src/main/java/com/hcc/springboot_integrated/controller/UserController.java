@@ -5,6 +5,11 @@ import com.hcc.springboot_integrated.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -63,7 +68,18 @@ public class UserController {
     }
 
     @PostMapping("addUser")
-    public String addUser(User user) {
+    public String addUser(@ModelAttribute("user") @Validated User user, BindingResult bindingResult, ModelMap modelMap) {
+        if (bindingResult.hasErrors()) {
+            List<FieldError> fieldErrors = bindingResult.getFieldErrors();
+            for (FieldError fieldError : fieldErrors) {
+                String field = fieldError.getField();
+                System.out.println(field);
+                String defaultMessage = fieldError.getDefaultMessage();
+                System.out.println(defaultMessage);
+                modelMap.addAttribute("err_" + field, defaultMessage);
+            }
+            return "input";
+        }
         this.userService.addUser(user);
         return "ok";
     }
