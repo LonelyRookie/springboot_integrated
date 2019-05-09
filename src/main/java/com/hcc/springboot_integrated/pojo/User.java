@@ -2,6 +2,7 @@ package com.hcc.springboot_integrated.pojo;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.beans.factory.annotation.Value;
 
 import javax.persistence.*;
 import javax.validation.Valid;
@@ -47,6 +48,7 @@ public class User implements Serializable {
     @Setter
     @NotEmpty
     private String gender;
+
 
     @ManyToOne(cascade = CascadeType.PERSIST)//级联保存
     @JoinColumn(name = "role_id")

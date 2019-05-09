@@ -1,0 +1,111 @@
+2019-05-09 14:46:03.087
+                [restartedMain] INFO  c.h.s.SpringbootIntegratedApplication - Starting SpringbootIntegratedApplication on DESKTOP-DKA82JB with PID 12028 (started by hcc in D:\Program Files\WorkSpace\IdeaProjects\springboot_integrated)
+2019-05-09 14:46:03.087
+                [restartedMain] INFO  c.h.s.SpringbootIntegratedApplication - The following profiles are active: dev
+2019-05-09 14:46:03.167
+                [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-09 14:46:03.167
+                [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-09 14:46:03.897
+                [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-09 14:46:03.897
+                [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-09 14:46:03.949
+                [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42ms. Found 2 repository interfaces.
+2019-05-09 14:46:03.959
+                [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-09 14:46:03.959
+                [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-09 14:46:03.969
+                [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hcc.springboot_integrated.dao.RoleRepository.
+2019-05-09 14:46:03.969
+                [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hcc.springboot_integrated.dao.UserRepository.
+2019-05-09 14:46:03.969
+                [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-05-09 14:46:04.271
+                [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3d873487] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 14:46:04.291
+                [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.hcc.springboot_integrated.config.RedisConfig$$EnhancerBySpringCGLIB$$33b03f0b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-09 14:46:04.601
+                [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-05-09 14:46:04.611
+                [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-05-09 14:46:04.611
+                [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-09 14:46:04.611
+                [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-05-09 14:46:04.792
+                [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-05-09 14:46:04.802
+                [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-09 14:46:04.802
+                [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1635 ms
+2019-05-09 14:46:05.428
+                [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-05-09 14:46:05.508
+                [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-05-09 14:46:05.548
+                [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+2019-05-09 14:46:05.548
+                [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-05-09 14:46:05.628
+                [restartedMain] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-05-09 14:46:05.718
+                [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-05-09 14:46:06.224
+                [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-09 14:46:06.374
+                [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-05-09 14:46:06.647
+                [restartedMain] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-05-09 14:46:06.787
+                [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2019-05-09 14:46:06.797
+                [restartedMain] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-05-09 14:46:06.797
+                [restartedMain] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2019-05-09 14:46:06.797
+                [restartedMain] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2019-05-09 14:46:06.797
+                [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'schedulerFactoryBean1' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-05-09 14:46:06.797
+                [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'schedulerFactoryBean1' initialized from an externally provided properties instance.
+2019-05-09 14:46:06.797
+                [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2019-05-09 14:46:06.797
+                [restartedMain] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: com.hcc.springboot_integrated.task.MySpringBeanJobFactory@43c0509b
+2019-05-09 14:46:06.948
+                [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-09 14:46:06.978
+                [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-05-09 14:46:07.328
+                [restartedMain] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 15 endpoint(s) beneath base path '/actuator'
+2019-05-09 14:46:07.358
+                [restartedMain] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2019-05-09 14:46:07.358
+                [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler schedulerFactoryBean1_$_NON_CLUSTERED started.
+2019-05-09 14:46:07.368
+                [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-05-09 14:46:07.390
+                [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-05-09 14:46:07.400
+                [restartedMain] INFO  c.h.s.SpringbootIntegratedApplication - Started SpringbootIntegratedApplication in 4.764 seconds (JVM running for 5.915)
+2019-05-09 14:46:07.891
+                [RMI TCP Connection(1)-192.168.91.1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-05-09 14:46:07.891
+                [RMI TCP Connection(1)-192.168.91.1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-05-09 14:46:08.404
+                [RMI TCP Connection(3)-192.168.91.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-09 14:46:08.404
+                [RMI TCP Connection(3)-192.168.91.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-05-09 14:46:08.414
+                [RMI TCP Connection(3)-192.168.91.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
